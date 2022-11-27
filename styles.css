@@ -103,7 +103,8 @@ p {
 }
 
 strong {
-	color: #303030
+	color: #303030;
+	font-size: 125%
 }
 
 ul, ol, dl {
@@ -120,8 +121,8 @@ dd {
 }
 
 hr {
-	position: relative;
-	margin: 1.5rem 0;
+/*	position: relative;
+*/	margin: 1.5rem 0;
 	border: 0;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #fff
@@ -1467,7 +1468,8 @@ button:hover a {
 
 .intro {
 	display: flex;
-	flex-flow: row wrap
+	flex-flow: row wrap;
+	justify-content: center
 }
 
 .intro-title {
@@ -1481,7 +1483,7 @@ button:hover a {
 }
 
 .intro-image {
-	flex: 0 0 220px;
+	flex: 0 0 190px;
 	margin: 0 auto
 }
 
@@ -1562,3 +1564,24 @@ button:hover a {
 .bigger {
 	font-size: 150%;
 }
+
+
+/*https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling*/
+header {
+	top:0;
+	margin-top: 0;
+  margin-left: 0rem;
+  position: sticky;
+  padding:10px 0 0 0;
+  background: white;
+  font-family: Lato, Arial;
+  opacity:1
+}
+
+#targetintro, #targetresearch, #targetedu, #targetawards, #targetwork, #targetpubs {
+  scroll-margin-top: 50px;
+}
+
+/*a {
+  color: inherit;
+}*/

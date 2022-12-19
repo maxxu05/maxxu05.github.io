@@ -264,6 +264,23 @@
         height: 1px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
       }
+
+      .wrapper {
+          position: relative;
+      }
+      .div1 {
+          right: 52%;
+          position: absolute;
+      }
+      .div2 {
+          position: relative;
+          left: 52%;
+          display: inline-block;
+      }
+      .block {
+          width: 100%;
+      }
+
       </style>
   
   
@@ -390,8 +407,147 @@
           <source src="./eccv2022-multiclass3D/4231.mp4" type="video/mp4">
         </video>
       </center> -->
+      <br><hr>
+      <center><h1>Challenge Information</h1></center>
 
+    <div class="block">
+      <div class="wrapper">
+        <span class="div1">
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;margin:0px auto;}
+        .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#444;
+          font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#fff;
+          font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-wp8o{text-align:center;vertical-align:middle}
+        .tg .tg-73oq{text-align:left;vertical-align:middle}
+        .tg .tg-qkc7{font-size:xx-large;text-align:center;vertical-align:middle}
+        .tg .tg-wn3b2{background-color:#D2E4FC;font-size:xx-large;text-align:center;vertical-align:middle}
+        .tg .tg-wp8o2{background-color:#D2E4FC;text-align:center;vertical-align:middle}
+        </style>
+        <table class="tg" table-layout="fixed" width="500px">
+        <thead>
+          <tr>
+            <th class="tg-wp8o"></th>
+            <th class="tg-wp8o">Standard<br>Imputation<br>Datasets</th>
+            <th class="tg-wp8o">Existing<br>mHealth<br>Datasets</th>
+            <th class="tg-wp8o">ECG<br>Imputation<br>Datasets</th>
+            <th class="tg-wp8o"><b>Our<br>PulseImpute<br>Challenge</b></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-wp8o2">mHealth<br>Pulsative Signals</td>
+            <td class="tg-wn3b2"></td>
+            <td class="tg-wn3b2"></td>
+            <td class="tg-wn3b2"></td>
+            <td class="tg-wn3b2">✓</td>
+          </tr>
+          <tr>
+            <td class="tg-wp8o">Publicly<br>Available Data</td>
+            <td class="tg-qkc7">✓</td>
+            <td class="tg-qkc7"></td>
+            <td class="tg-qkc7">✓</td>
+            <td class="tg-qkc7">✓</td>
+          </tr>
+          <tr>
+            <td class="tg-wp8o2">Realistic<br>Missingness</td>
+            <td class="tg-wn3b2">✓</td>
+            <td class="tg-wn3b2">✓</td>
+            <td class="tg-wn3b2"></td>
+            <td class="tg-wn3b2">✓</td>
+          </tr>
+          <tr>
+            <td class="tg-wp8o">Directly Evals<br>Missingness</td>
+            <td class="tg-qkc7">✓</td>
+            <td class="tg-qkc7"></td>
+            <td class="tg-qkc7">✓</td>
+            <td class="tg-qkc7">✓</td>
+          </tr>
+          <tr>
+            <td class="tg-wp8o2">Comprehensive<br>Benchmarks</td>
+            <td class="tg-wn3b2">✓</td>
+            <td class="tg-wn3b2"></td>
+            <td class="tg-wn3b2"></td>
+            <td class="tg-wn3b2">✓</td>
+          </tr>
+          <tr>
+            <td class="tg-wp8o">Downstream<br>Tasks</td>
+            <td class="tg-qkc7">✓</td>
+            <td class="tg-qkc7">✓</td>
+            <td class="tg-qkc7">✓</td>
+            <td class="tg-qkc7">✓</td>
+          </tr>
+        </tbody>
+        <caption>
+          Prior Work compared to PulseImpute Challenge
+        </caption>
+        </table>
+      </span>
 
+      <span class="div2">
+        <br>
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;margin:0px auto;}
+          .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#444;
+            font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#fff;
+            font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-wn3b{background-color:#D2E4FC;text-align:center;vertical-align:middle}
+          .tg .tg-yla0{font-weight:bold;text-align:left;vertical-align:middle}
+          .tg .tg-nrix{text-align:center;vertical-align:middle}
+          .tg .tg-qw54{background-color:#D2E4FC;font-weight:bold;text-align:left;vertical-align:middle}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-yla0">PulseImpute <br>Tasks</th>
+              <th class="tg-nrix">Signal Type<br>and Origin</th>
+              <th class="tg-nrix">Total Size</th>
+              <th class="tg-nrix">Length</th>
+              <th class="tg-nrix">Missingness</th>
+              <th class="tg-nrix">Downstream <br>Task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-qw54">ECG<br>Imputation <br>and Cardiac <br>Multi-label<br>Classification</td>
+              <td class="tg-wn3b">ECG Signals<br>from PTB-XL</td>
+              <td class="tg-wn3b">21,837<br>Signals from <br>18,885 <br>Patients</td>
+              <td class="tg-wn3b">10 Sec at <br>100 Hz</td>
+              <td class="tg-wn3b">Simulated <br>Extended <br>Loss, <br>Simulated <br>Transient <br>Loss</td>
+              <td class="tg-wn3b">Classifying<br>Form, <br>Rhythm, or <br>Diagnosis<br>Labels <br>(Macro-AUC)</td>
+            </tr>
+            <tr>
+              <td class="tg-yla0">ECG<br>Imputation <br>and <br>Heartbeat<br>Detection</td>
+              <td class="tg-nrix">ECG Signals<br>Curated from<br>MIMIC-III<br>Waveform</td>
+              <td class="tg-nrix">440,953<br>Signals from<br>32,930<br>Patients</td>
+              <td class="tg-nrix">5 Min at <br>100 Hz</td>
+              <td class="tg-nrix">102,201 <br>Extracted <br>ECG mHealth <br>Field Study <br>Patterns</td>
+              <td class="tg-nrix">Detecting <br>R Peaks <br>(F1-Score)</td>
+            </tr>
+            <tr>
+              <td class="tg-qw54">PPG <br>Imputation <br>and <br>Heartbeat <br>Detection</td>
+              <td class="tg-wn3b">PPG Signals<br>Curated from<br>MIMIC-III Waveform</td>
+              <td class="tg-wn3b">151,738 <br>Signals from <br>18,210 <br>Patients</td>
+              <td class="tg-wn3b">5 Min at <br>100 Hz</td>
+              <td class="tg-wn3b">425 <br>Extracted <br>PPG mHealth <br>Field Study <br>Patterns</td>
+              <td class="tg-wn3b">Detecting <br>Systolic Peaks <br>(F1-Score)</td>
+            </tr>
+          </tbody>
+          <caption>
+            Details on Specific PulseImpute Challenge Tasks
+          </caption>
+          </table>
+        </span>
+        </div>
+      </div>
+
+      <br><br><br><br>
+      <hr>
+      <center><h1>Results</h1>
+      <iframe src="http://docs.google.com/gview?url=https://maxxu05.github.io/projects/pulseimpute/PulseImpute_Neurips_Results.pptx&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+    </center>
       <br><hr>
       <center><h1>Citation</h1></center>
       <div class="citationbox">    

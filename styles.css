@@ -1581,3 +1581,22 @@ header {
 /*a {
   color: inherit;
 }*/
+
+
+/* 1. Target the paragraphs and remove default vertical margins */
+.news-list p.news-entry {
+    margin-top: 5px;   /* Small margin for a tiny bit of space above */
+    margin-bottom: 5px; /* Small margin for a tiny bit of space below */
+    /* You can set these to 0px if you want the text right against the line */
+}
+
+/* 2. Target the horizontal rules and remove default vertical margins */
+.news-list hr.faint-line {
+    border: none;
+    height: 1px;
+    background-color: #eee; /* Faint color for the line */
+    
+    /* Crucial: Set margins to control spacing around the line */
+    margin-top: 5px;    /* Space between text above and the line */
+    margin-bottom: 5px; /* Space between the line and text below */
+}
